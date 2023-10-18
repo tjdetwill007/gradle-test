@@ -23,8 +23,9 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
     - name: Build the app
-      run: chmod 777 gradlew
-      run: ./gradlew assembleDebug
+      run: | 
+        chmod 777 gradlew
+        ./gradlew assembleDebug
     - name: Upload apk
       uses: actions/upload-artifact@v2
       with:
