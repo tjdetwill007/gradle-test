@@ -22,7 +22,7 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-   -  name: Build the app
+    - name: Build the app
       run: chmod 777 gradlew
       run: ./gradlew assembleDebug
     - name: Upload apk
